@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: 1144bf5a376884bb1adfaf779d6da6e0
+timeCreated: 1516612813
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Auge_links
+    100002: Auge_rechts
+    100004: Bein_links
+    100006: Bein_links_2
+    100008: Bein_rechts
+    100010: Bein_rechts_2
+    100012: Cinema_4D_Editor
+    100014: "Deckfl\xE4che_1"
+    100016: "Deckfl\xE4che_1_2"
+    100018: "Deckfl\xE4che_1_3"
+    100020: "Deckfl\xE4che_1_4"
+    100022: "Deckfl\xE4che_1_5"
+    100024: "Deckfl\xE4che_1_6"
+    100026: "Deckfl\xE4che_2"
+    100028: "Deckfl\xE4che_2_2"
+    100030: "Deckfl\xE4che_2_3"
+    100032: "Deckfl\xE4che_2_4"
+    100034: "Deckfl\xE4che_2_5"
+    100036: Fluegel1
+    100038: Fluegel1_2
+    100040: Fluegel_links
+    100042: Fluegel_rechts
+    100044: "Fu\xDF1"
+    100046: "Fu\xDF1_2"
+    100048: "Grundk\xF6rper"
+    100050: "Grundk\xF6rper_2"
+    100052: Schnabel
+    100054: Schnabel_2
+    100056: //RootNode
+    400000: Auge_links
+    400002: Auge_rechts
+    400004: Bein_links
+    400006: Bein_links_2
+    400008: Bein_rechts
+    400010: Bein_rechts_2
+    400012: Cinema_4D_Editor
+    400014: "Deckfl\xE4che_1"
+    400016: "Deckfl\xE4che_1_2"
+    400018: "Deckfl\xE4che_1_3"
+    400020: "Deckfl\xE4che_1_4"
+    400022: "Deckfl\xE4che_1_5"
+    400024: "Deckfl\xE4che_1_6"
+    400026: "Deckfl\xE4che_2"
+    400028: "Deckfl\xE4che_2_2"
+    400030: "Deckfl\xE4che_2_3"
+    400032: "Deckfl\xE4che_2_4"
+    400034: "Deckfl\xE4che_2_5"
+    400036: Fluegel1
+    400038: Fluegel1_2
+    400040: Fluegel_links
+    400042: Fluegel_rechts
+    400044: "Fu\xDF1"
+    400046: "Fu\xDF1_2"
+    400048: "Grundk\xF6rper"
+    400050: "Grundk\xF6rper_2"
+    400052: Schnabel
+    400054: Schnabel_2
+    400056: //RootNode
+    2000000: Cinema_4D_Editor
+    2100000: Mat
+    2100002: Mat.1
+    2100004: Mat.4
+    2100006: Mat.3
+    2100008: Mat.2
+    2300000: Auge_links
+    2300002: Auge_rechts
+    2300004: "Deckfl\xE4che_1_2"
+    2300006: "Deckfl\xE4che_1_4"
+    2300008: "Deckfl\xE4che_1_5"
+    2300010: "Deckfl\xE4che_1_6"
+    2300012: "Deckfl\xE4che_2_2"
+    2300014: "Deckfl\xE4che_2_4"
+    2300016: "Deckfl\xE4che_2_5"
+    2300018: Fluegel1
+    2300020: Fluegel1_2
+    2300022: "Fu\xDF1"
+    2300024: "Fu\xDF1_2"
+    2300026: "Grundk\xF6rper_2"
+    2300028: Schnabel_2
+    3300000: Auge_links
+    3300002: Auge_rechts
+    3300004: "Deckfl\xE4che_1_2"
+    3300006: "Deckfl\xE4che_1_4"
+    3300008: "Deckfl\xE4che_1_5"
+    3300010: "Deckfl\xE4che_1_6"
+    3300012: "Deckfl\xE4che_2_2"
+    3300014: "Deckfl\xE4che_2_4"
+    3300016: "Deckfl\xE4che_2_5"
+    3300018: Fluegel1
+    3300020: Fluegel1_2
+    3300022: "Fu\xDF1"
+    3300024: "Fu\xDF1_2"
+    3300026: "Grundk\xF6rper_2"
+    3300028: Schnabel_2
+    4300000: Auge_rechts
+    4300002: Auge_links
+    4300004: Fluegel1
+    4300006: "Deckfl\xE4che_1_2"
+    4300008: "Deckfl\xE4che_2_2"
+    4300010: Fluegel1_2
+    4300012: "Deckfl\xE4che_1_4"
+    4300014: "Deckfl\xE4che_2_4"
+    4300016: "Fu\xDF1"
+    4300018: Schnabel_2
+    4300020: "Deckfl\xE4che_1_5"
+    4300022: "Fu\xDF1_2"
+    4300024: "Grundk\xF6rper_2"
+    4300026: "Deckfl\xE4che_1_6"
+    4300028: "Deckfl\xE4che_2_5"
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
