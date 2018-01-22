@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 8a80d457fdb54417294a62cb50e940b0
-timeCreated: 1516612844
+guid: e5d28d2214cc086448186a87ae74236e
+timeCreated: 1516613775
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -96,11 +96,6 @@ ModelImporter:
     400086: Schnabel_unten
     400088: //RootNode
     2000000: Cinema_4D_Editor
-    2100000: Mat.1
-    2100002: Mat
-    2100004: Mat.3
-    2100006: Mat.2
-    2100008: No Name
     2300000: Bein1_2
     2300002: Bein1_3
     2300004: "Deckfl\xE4che_1"
@@ -201,12 +196,37 @@ ModelImporter:
     4300062: "Deckfl\xE4che_1_11"
     4300064: "Deckfl\xE4che_2_9"
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat
+    second: {fileID: 2100000, guid: f63c1f122c3db4b428afc722ad545121, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.1
+    second: {fileID: 2100000, guid: 8c401c7566673514ea0e8d88797d9380, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.2
+    second: {fileID: 2100000, guid: 35d1812da8509b640a29fcb24d80a7e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.3
+    second: {fileID: 2100000, guid: 51d7cfbc4c26a3744a5c7b33674f6dad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 52c6243a4a795334e82b68917cecd5c4, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -244,8 +264,6 @@ ModelImporter:
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
-    preserveHierarchy: 0
-    indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
