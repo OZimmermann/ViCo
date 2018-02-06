@@ -814,6 +814,62 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 938634760}
   m_Mesh: {fileID: 4300012, guid: 1144bf5a376884bb1adfaf779d6da6e0, type: 3}
+--- !u!1001 &997460088
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4223534525231220, guid: a47a5f0cd6a4d493b882675c7ce42160, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4223534525231220, guid: a47a5f0cd6a4d493b882675c7ce42160, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4223534525231220, guid: a47a5f0cd6a4d493b882675c7ce42160, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 6.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4223534525231220, guid: a47a5f0cd6a4d493b882675c7ce42160, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4223534525231220, guid: a47a5f0cd6a4d493b882675c7ce42160, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4223534525231220, guid: a47a5f0cd6a4d493b882675c7ce42160, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4223534525231220, guid: a47a5f0cd6a4d493b882675c7ce42160, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4223534525231220, guid: a47a5f0cd6a4d493b882675c7ce42160, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 108595559558589980, guid: a47a5f0cd6a4d493b882675c7ce42160,
+        type: 2}
+      propertyPath: m_Type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 108595559558589980, guid: a47a5f0cd6a4d493b882675c7ce42160,
+        type: 2}
+      propertyPath: m_Lightmapping
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1972996467149428, guid: a47a5f0cd6a4d493b882675c7ce42160, type: 2}
+      propertyPath: m_Name
+      value: Leuchtkugel
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: a47a5f0cd6a4d493b882675c7ce42160, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1165847286
 GameObject:
   m_ObjectHideFlags: 0
