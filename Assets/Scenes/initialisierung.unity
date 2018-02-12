@@ -867,6 +867,16 @@ Prefab:
       propertyPath: m_Name
       value: Leuchtkugel
       objectReference: {fileID: 0}
+    - target: {fileID: 108595559558589980, guid: a47a5f0cd6a4d493b882675c7ce42160,
+        type: 2}
+      propertyPath: m_DrawHalo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 108595559558589980, guid: a47a5f0cd6a4d493b882675c7ce42160,
+        type: 2}
+      propertyPath: m_Range
+      value: 1.6494868
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a47a5f0cd6a4d493b882675c7ce42160, type: 2}
   m_IsPrefabParent: 0
