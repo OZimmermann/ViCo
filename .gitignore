@@ -42,6 +42,9 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
+# Unity Build
+
+/App
 
 # =============== #
 # macOS generated #

@@ -204,7 +204,6 @@ PlayerSettings:
   tvOSSmallIconLayers: []
   tvOSSmallIconLayers2x: []
   tvOSLargeIconLayers: []
-  tvOSLargeIconLayers2x: []
   tvOSTopShelfImageLayers: []
   tvOSTopShelfImageLayers2x: []
   tvOSTopShelfImageWideLayers: []
@@ -567,7 +566,7 @@ PlayerSettings:
   m_MobileRenderingPath: 1
   metroPackageName: ViCo
   metroPackageVersion: 1.0.0.0
-  metroCertificatePath: "C:\\Users\\J\xF6rg\\Documents\\GitHub\\ViCo\\Assets\\WSATestCertificate.pfx"
+  metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: 
   metroCertificateSubject: DefaultCompany
   metroCertificateIssuer: DefaultCompany

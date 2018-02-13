@@ -44,7 +44,8 @@ public class GazeGestureManager : MonoBehaviour
 		{
 			// If the raycast hit a hologram, use that as the focused object.
 			FocusedObject = hitInfo.collider.gameObject;
-		}
+            Debug.Log("TAP GESTURE. I see you, you dont see me. Script: GazeGestureManager");
+        }
 		else
 		{
 			// If the raycast did not hit a hologram, clear the focused object.

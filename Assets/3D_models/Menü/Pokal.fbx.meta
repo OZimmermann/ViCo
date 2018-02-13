@@ -1,48 +1,19 @@
 fileFormatVersion: 2
-guid: 93bb9675b12424fe5bc816cd8fceadfa
-timeCreated: 1516613003
+guid: 8c99e142d0c1bcd4a9702e947c9a77ac
+timeCreated: 1518529149
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: "Deckfl\xE4che_1"
-    100002: "Deckfl\xE4che_1_2"
-    100004: "Deckfl\xE4che_2"
-    100006: "Deckfl\xE4che_2_2"
-    100008: Lathe
-    100010: Loft
-    100012: Loft_1
-    100014: //RootNode
-    400000: "Deckfl\xE4che_1"
-    400002: "Deckfl\xE4che_1_2"
-    400004: "Deckfl\xE4che_2"
-    400006: "Deckfl\xE4che_2_2"
-    400008: Lathe
-    400010: Loft
-    400012: Loft_1
-    400014: //RootNode
-    2100000: Pokal
-    2300000: "Deckfl\xE4che_1"
-    2300002: "Deckfl\xE4che_1_2"
-    2300004: "Deckfl\xE4che_2"
-    2300006: "Deckfl\xE4che_2_2"
-    2300008: Lathe
-    2300010: Loft
-    2300012: Loft_1
-    3300000: "Deckfl\xE4che_1"
-    3300002: "Deckfl\xE4che_1_2"
-    3300004: "Deckfl\xE4che_2"
-    3300006: "Deckfl\xE4che_2_2"
-    3300008: Lathe
-    3300010: Loft
-    3300012: Loft_1
-    4300000: Loft_1
-    4300002: "Deckfl\xE4che_1"
-    4300004: "Deckfl\xE4che_2"
-    4300006: Loft
-    4300008: "Deckfl\xE4che_1_2"
-    4300010: "Deckfl\xE4che_2_2"
-    4300012: Lathe
+    100000: Null
+    100002: //RootNode
+    400000: Null
+    400002: //RootNode
+    2100000: Schrift
+    2100002: Anker
+    2300000: Null
+    3300000: Null
+    4300000: Null
     9500000: //RootNode
   externalObjects: {}
   materials:
