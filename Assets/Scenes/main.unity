@@ -146,8 +146,8 @@ MonoBehaviour:
     Response:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 739228694}
-          m_MethodName: 
+        - m_Target: {fileID: 739228695}
+          m_MethodName: blue
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -163,8 +163,8 @@ MonoBehaviour:
     Response:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 739228694}
-          m_MethodName: 
+        - m_Target: {fileID: 739228695}
+          m_MethodName: green
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -180,8 +180,8 @@ MonoBehaviour:
     Response:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 739228694}
-          m_MethodName: 
+        - m_Target: {fileID: 739228695}
+          m_MethodName: red
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -315,11 +315,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fa7c66b4db46e4ce5a312401c17c3493, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fa7c66b4db46e4ce5a312401c17c3493, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3.26
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fa7c66b4db46e4ce5a312401c17c3493, type: 3}
       propertyPath: m_LocalRotation.x
@@ -356,7 +356,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1678508485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7a28e4066bbc49f9b197afd6eeebb93, type: 3}
+  m_Script: {fileID: 11500000, guid: c02d25cb580374605832fd807f58074f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1819925061
