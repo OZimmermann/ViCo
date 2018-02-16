@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: 40839d361d5170a42bb366752d107549
-timeCreated: 1518529148
+guid: f1b62899461442f4499256ef128580f8
+timeCreated: 1518533217
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Null
+    100002: Anker
+    100004: Objekt
+    100006: Schrift
+    100008: Schrift_2
     400000: //RootNode
-    400002: Null
+    400002: Anker
+    400004: Objekt
+    400006: Schrift
+    400008: Schrift_2
     2100000: Schrift
     2100002: Anker
-    2300000: Null
-    3300000: Null
-    4300000: Null
+    2300000: Objekt
+    2300002: Schrift_2
+    3300000: Objekt
+    3300002: Schrift_2
+    4300000: Schrift_2
+    4300002: Objekt
     9500000: //RootNode
   externalObjects: {}
   materials:

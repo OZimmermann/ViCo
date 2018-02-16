@@ -32,7 +32,7 @@ public class WorldCursor : MonoBehaviour
             this.transform.position = hitInfo.point;
 
             // Rotate the cursor to hug the surface of the hologram.
-            this.transform.rotation = Quaternion.FromToRotation(Vector3.up, hitInfo.normal);
+            this.transform.rotation = Quaternion.FromToRotation(Vector3.forward, hitInfo.normal);
         }
         else
         {
