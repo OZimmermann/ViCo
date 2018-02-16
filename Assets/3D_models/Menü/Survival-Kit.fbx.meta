@@ -1,28 +1,29 @@
 fileFormatVersion: 2
-guid: 5c5068ca6b378a84195496cfb09c118a
-timeCreated: 1518784012
+guid: a05dc59b932805d459ebad466635f6e4
+timeCreated: 1518783796
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Objekt
-    100002: //RootNode
-    100004: Pokal
-    100006: Schrift
-    100008: Schrift_2
-    400000: Objekt
-    400002: //RootNode
-    400004: Pokal
-    400006: Schrift
-    400008: Schrift_2
+    100000: Boole
+    100002: Schrift
+    100004: Schrift_2
+    100006: //RootNode
+    100008: Survival_Kit
+    400000: Boole
+    400002: Schrift
+    400004: Schrift_2
+    400006: //RootNode
+    400008: Survival_Kit
     2100000: Schrift
-    2100002: Hologramme
-    2300000: Objekt
+    2100002: No Name
+    2100004: Hologramme
+    2300000: Boole
     2300002: Schrift_2
-    3300000: Objekt
+    3300000: Boole
     3300002: Schrift_2
     4300000: Schrift_2
-    4300002: Objekt
+    4300002: Boole
     9500000: //RootNode
   externalObjects: {}
   materials:

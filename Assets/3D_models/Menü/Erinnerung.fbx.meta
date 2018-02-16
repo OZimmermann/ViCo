@@ -1,28 +1,29 @@
 fileFormatVersion: 2
-guid: 5c5068ca6b378a84195496cfb09c118a
-timeCreated: 1518784012
+guid: 3ded392a379084048b310aa1d4b6ecba
+timeCreated: 1518783796
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Objekt
-    100002: //RootNode
-    100004: Pokal
+    100000: //RootNode
+    100002: Fotos
+    100004: Fotos_2
     100006: Schrift
     100008: Schrift_2
-    400000: Objekt
-    400002: //RootNode
-    400004: Pokal
+    400000: //RootNode
+    400002: Fotos
+    400004: Fotos_2
     400006: Schrift
     400008: Schrift_2
     2100000: Schrift
     2100002: Hologramme
-    2300000: Objekt
+    2100004: Foto
+    2300000: Fotos_2
     2300002: Schrift_2
-    3300000: Objekt
+    3300000: Fotos_2
     3300002: Schrift_2
     4300000: Schrift_2
-    4300002: Objekt
+    4300002: Fotos_2
     9500000: //RootNode
   externalObjects: {}
   materials:

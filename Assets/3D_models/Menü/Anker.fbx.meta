@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: f1b62899461442f4499256ef128580f8
-timeCreated: 1518533217
+guid: 9bd6bf78c8d485f46b4a26af18851dc3
+timeCreated: 1518784012
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -8,20 +8,20 @@ ModelImporter:
     100000: //RootNode
     100002: Anker
     100004: Objekt
-    100006: Schrift
-    100008: Schrift_2
+    100006: Schrift_1
+    100008: Schrift_1_2
     400000: //RootNode
     400002: Anker
     400004: Objekt
-    400006: Schrift
-    400008: Schrift_2
+    400006: Schrift_1
+    400008: Schrift_1_2
     2100000: Schrift
-    2100002: Anker
+    2100002: Hologramme
     2300000: Objekt
-    2300002: Schrift_2
+    2300002: Schrift_1_2
     3300000: Objekt
-    3300002: Schrift_2
-    4300000: Schrift_2
+    3300002: Schrift_1_2
+    4300000: Schrift_1_2
     4300002: Objekt
     9500000: //RootNode
   externalObjects: {}
