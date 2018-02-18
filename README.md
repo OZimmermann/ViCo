@@ -8,6 +8,7 @@ Fachbereich Media </br>
 ### How to Git in Unity
 
 https://robots.thoughtbot.com/how-to-git-with-unity </br>
+You need to install this: https://git-lfs.github.com/ </br>
 
 ### Hololens Emulator
 
