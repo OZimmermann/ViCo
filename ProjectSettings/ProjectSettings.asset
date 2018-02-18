@@ -574,7 +574,7 @@ PlayerSettings:
   metroCertificateNotAfter: 00e4873873b2d401
   metroApplicationDescription: ViCo
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: ViCo
   metroCommandLineArgsFile: 
   metroTileShowName: 0
   metroMediumTileShowName: 0
@@ -599,7 +599,7 @@ PlayerSettings:
       InternetClient: False
       InternetClientServer: False
       Location: False
-      Microphone: False
+      Microphone: True
       MusicLibrary: False
       Objects3D: False
       PhoneCall: False
@@ -612,7 +612,7 @@ PlayerSettings:
       UserAccountInformation: False
       VideosLibrary: False
       VoipCall: False
-      WebCam: False
+      WebCam: True
   metroFTAName: 
   metroFTAFileTypes: []
   metroProtocolName: 

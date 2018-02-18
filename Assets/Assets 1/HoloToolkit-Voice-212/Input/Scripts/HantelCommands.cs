@@ -7,7 +7,8 @@ public class HantelCommands : MonoBehaviour
 	// Called by GazeGestureManager when the user performs a Select gesture
 	void OnSelect()
 	{
-		GetComponentInParent<MenueController> ().HantelMenue ();
+        Debug.Log("Anker offen");
+        GetComponentInParent<MenueController> ().HantelMenue ();
 	}
 }
 

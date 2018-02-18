@@ -12,8 +12,19 @@ public class MenueController : MonoBehaviour
 	public GameObject Pokal;
 	public GameObject Hantel;
 
+	public void HideMenue(){
+        Debug.Log("Menü zu");
+        Erinnerung.SetActive(false);
+		SurvivalKit.SetActive(false);
+		Graph.SetActive(false);
+		Pyramide.SetActive(false);	
+		Anker.SetActive(false);	
+		Pokal.SetActive(false);	
+		Hantel.SetActive(false);
+	}
 
 	public void BaseMenue(){
+		Debug.Log("Menü offen");
 		Erinnerung.SetActive(false);
 		SurvivalKit.SetActive(false);
 		Graph.SetActive(false);

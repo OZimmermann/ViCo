@@ -7,7 +7,7 @@ public class MenuCommands : MonoBehaviour
 	// Use this for initialization
 	void Awake()
 	{
-		GetComponent<MenueController> ().BaseMenue ();
+		GetComponent<MenueController> ().HideMenue ();
 	}
 
 }

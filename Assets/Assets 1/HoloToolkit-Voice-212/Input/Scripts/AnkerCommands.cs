@@ -6,6 +6,7 @@ public class AnkerCommands : MonoBehaviour
 {
     void OnSelect()
     {
+        Debug.Log("Anker offen");
 		GetComponentInParent<MenueController> ().AnkerMenue ();
     }
 }
