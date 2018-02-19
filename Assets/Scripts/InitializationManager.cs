@@ -28,12 +28,16 @@ public class InitializationManager : MonoBehaviour {
 
         Eule.SetActive(false);
 
-		start.Play ();
-		Debug.Log ("Sag: yes, okay (,ja)");
-		//source.Play(44100);
-	}
+        start.Play();
+        Debug.Log("Sag: yes, okay (,ja)");
+        //source.Play(44100);
+    }
 
-	void Update () {
+    void Update () {
+        if(stage == 4)
+        {
+            Debug.Log(end.isPlaying);
+        }
 		switch (stage) {
 		case 1:
 			if (!start.isPlaying) {
@@ -53,7 +57,8 @@ public class InitializationManager : MonoBehaviour {
 				//Debug.Log ("KeywordManager started");
 			}
 			break;
-		case 4: 
+		case 4:
+                Debug.Log(end.isPlaying);
 			if (!end.isPlaying) {
 				Debug.Log("new Scene will be loaded");
 				//SceneManager.LoadScene ("therapeuten_uebung", LoadSceneMode.Additive);
@@ -84,11 +89,11 @@ public class InitializationManager : MonoBehaviour {
 	public void EndIntroduction () {
         Leuchtkugel.SetActive(false);
         Eule.SetActive(true);
-		end = Eule.GetComponent<AudioSource> ();
 
 		stage++;
 		keywordManager.StopKeywordRecognizer ();
 		Debug.Log ("Initialisierung beendet, warte auf Ende vom Soundfile");
+        Debug.Log("Stage: " + stage);
 		end.Play ();
 	}
 }
