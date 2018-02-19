@@ -94,7 +94,6 @@ namespace Academy.HoloToolkit.Unity
         {
             if (keywordRecognizer != null && !keywordRecognizer.IsRunning)
             {
-                Debug.Log("Ich bin im StartKeyWordRecognizer");
                 keywordRecognizer.Start();
             }
         }

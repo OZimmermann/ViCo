@@ -4,7 +4,7 @@ using UnityEngine;
 using Academy.HoloToolkit.Unity;
 using UnityEngine.SceneManagement;
 
-public class SoundManager : MonoBehaviour {
+public class InitializationManager : MonoBehaviour {
 
 	public AudioSource start;
 	public AudioSource gender;
@@ -17,9 +17,10 @@ public class SoundManager : MonoBehaviour {
 
 	public int stage = 1;
 	/*
-	 * stage = 1 // introduction
+	 * stage = 1 // start introduction
 	 * stage = 2 // ChooseGender
 	 * stage = 3 // ChooseOwl
+	 * stage = 4 // end introduction and set next scene
 	 */
 
 	void Start () {
@@ -28,7 +29,7 @@ public class SoundManager : MonoBehaviour {
         Eule.SetActive(false);
 
 		start.Play ();
-		Debug.Log ("Ich spiele introduction ab");
+		Debug.Log ("Sag: yes, okay (,ja)");
 		//source.Play(44100);
 	}
 
@@ -62,7 +63,6 @@ public class SoundManager : MonoBehaviour {
 		default:
 			break;
 		}
-
 	}
 
 	public void ChooseGender () {
@@ -70,6 +70,7 @@ public class SoundManager : MonoBehaviour {
 		keywordManager.StopKeywordRecognizer ();
 		gender.Play ();
 		Debug.Log ("Sag: männlich");
+		Debug.Log ("Saveword: two");
 	}
 
 	public void ChooseOwl () {
@@ -77,15 +78,17 @@ public class SoundManager : MonoBehaviour {
 		keywordManager.StopKeywordRecognizer ();
 		owl.Play ();
 		Debug.Log ("Sag: Sag Waldkauz/Uhu/Schneeeule");
+		Debug.Log ("Saveword: three");
 	}
 
 	public void EndIntroduction () {
         Leuchtkugel.SetActive(false);
         Eule.SetActive(true);
+		end = Eule.GetComponent<AudioSource> ();
 
 		stage++;
 		keywordManager.StopKeywordRecognizer ();
-		Debug.Log ("Initialisierung beendet");
+		Debug.Log ("Initialisierung beendet, warte auf Ende vom Soundfile");
 		end.Play ();
 	}
 }
