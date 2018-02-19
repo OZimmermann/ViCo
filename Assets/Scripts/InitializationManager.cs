@@ -58,7 +58,7 @@ public class InitializationManager : MonoBehaviour {
 			if (!end.isPlaying) {
 				Debug.Log("new Scene will be loaded");
 				//SceneManager.LoadScene ("therapeuten_uebung", LoadSceneMode.Additive);
-				SceneManager.LoadSceneAsync("therapeuten_uebung", LoadSceneMode.Additive);
+				SceneManager.LoadSceneAsync("03_therapeuten_uebung", LoadSceneMode.Additive);
 			}
 			break;
 		default:
