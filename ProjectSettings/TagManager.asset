@@ -4,17 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Pokal
-  - Hantel
-  - Anker
   - Erinnerung
   - SurvivalKit
-  - "Drau\xDFen"
-  - Drinnen
-  - Einkaufen
-  - Telefon
-  - Graph
-  - Pyramide
   layers:
   - Default
   - TransparentFX

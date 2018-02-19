@@ -11,6 +11,9 @@ public class MenueController : MonoBehaviour
 	public GameObject Anker;
 	public GameObject Pokal;
 	public GameObject Hantel;
+    public GameObject Einkaufen;
+    public GameObject Telefon;
+    public GameObject Uebung;
 
 	public void HideMenue(){
         Debug.Log("Menü zu");
@@ -18,7 +21,10 @@ public class MenueController : MonoBehaviour
 		SurvivalKit.SetActive(false);
 		Graph.SetActive(false);
 		Pyramide.SetActive(false);	
-		Anker.SetActive(false);	
+        Einkaufen.SetActive(false);
+        Telefon.SetActive(false);
+        Uebung.SetActive(false);
+        Anker.SetActive(false);	
 		Pokal.SetActive(false);	
 		Hantel.SetActive(false);
 	}
@@ -28,17 +34,23 @@ public class MenueController : MonoBehaviour
 		Erinnerung.SetActive(false);
 		SurvivalKit.SetActive(false);
 		Graph.SetActive(false);
-		Pyramide.SetActive(false);	
+		Pyramide.SetActive(false);
+        Einkaufen.SetActive(false);
+        Telefon.SetActive(false);
+        Uebung.SetActive(false);
 
-		Anker.SetActive(true);	
+        Anker.SetActive(true);	
 		Pokal.SetActive(true);	
 		Hantel.SetActive(true);	
 	}
 
 	public void AnkerMenue(){
 		Graph.SetActive(false);
-		Pyramide.SetActive(false);	
-		Anker.SetActive(false);	
+		Pyramide.SetActive(false);
+        Einkaufen.SetActive(false);
+        Telefon.SetActive(false);
+        Uebung.SetActive(false);
+        Anker.SetActive(false);	
 		Pokal.SetActive(false);	
 		Hantel.SetActive(false);	
 
@@ -53,21 +65,26 @@ public class MenueController : MonoBehaviour
 		Pyramide.SetActive(false);	
 		Anker.SetActive(false);	
 		Pokal.SetActive(false);	
-		Hantel.SetActive(false);	
-	}
+		Hantel.SetActive(false);
+
+        Einkaufen.SetActive(true);
+        Telefon.SetActive(true);
+        Uebung.SetActive(true);
+    }
 
 	public void PokalMenue(){
 		SurvivalKit.SetActive(false);
-		Graph.SetActive(false);
-		Anker.SetActive(false);	
+		Erinnerung.SetActive(false);
+        Einkaufen.SetActive(false);
+        Telefon.SetActive(false);
+        Uebung.SetActive(false);
+        Anker.SetActive(false);	
 		Pokal.SetActive(false);	
-		Hantel.SetActive(false);	
+		Hantel.SetActive(false);
 
-		Erinnerung.SetActive(true);
+        Graph.SetActive(true);
 		Pyramide.SetActive(true);	
 	}
-
-
 }
 
 
