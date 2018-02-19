@@ -12,6 +12,9 @@ public class SoundManager : MonoBehaviour {
 	public AudioSource end;
 	public KeywordManager keywordManager;
 
+    public GameObject Eule;
+    public GameObject Leuchtkugel;
+
 	public int stage = 1;
 	/*
 	 * stage = 1 // introduction
@@ -21,6 +24,8 @@ public class SoundManager : MonoBehaviour {
 
 	void Start () {
 		keywordManager = GetComponent<KeywordManager> ();
+
+        Eule.SetActive(false);
 
 		start.Play ();
 		Debug.Log ("Ich spiele introduction ab");
@@ -75,6 +80,9 @@ public class SoundManager : MonoBehaviour {
 	}
 
 	public void EndIntroduction () {
+        Leuchtkugel.SetActive(false);
+        Eule.SetActive(true);
+
 		stage++;
 		keywordManager.StopKeywordRecognizer ();
 		Debug.Log ("Initialisierung beendet");
