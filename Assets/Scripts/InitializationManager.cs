@@ -15,7 +15,7 @@ public class InitializationManager : MonoBehaviour {
     public GameObject Eule;
     public GameObject Leuchtkugel;
 
-	public int stage = 1;
+	private int stage;
 	/*
 	 * stage = 1 // start introduction
 	 * stage = 2 // ChooseGender
@@ -24,20 +24,17 @@ public class InitializationManager : MonoBehaviour {
 	 */
 
 	void Start () {
+		stage = 1;
 		keywordManager = GetComponent<KeywordManager> ();
+		Debug.Log("Stage: " + stage);
 
         Eule.SetActive(false);
 
         start.Play();
         Debug.Log("Sag: yes, okay (,ja)");
-        //source.Play(44100);
     }
 
     void Update () {
-        if(stage == 4)
-        {
-            Debug.Log(end.isPlaying);
-        }
 		switch (stage) {
 		case 1:
 			if (!start.isPlaying) {
@@ -58,7 +55,6 @@ public class InitializationManager : MonoBehaviour {
 			}
 			break;
 		case 4:
-                Debug.Log(end.isPlaying);
 			if (!end.isPlaying) {
 				Debug.Log("new Scene will be loaded");
 				//SceneManager.LoadScene ("therapeuten_uebung", LoadSceneMode.Additive);
@@ -74,7 +70,7 @@ public class InitializationManager : MonoBehaviour {
 		stage++;
 		keywordManager.StopKeywordRecognizer ();
 		gender.Play ();
-		Debug.Log ("Sag: männlich");
+		Debug.Log ("Sag: man");
 		Debug.Log ("Saveword: two");
 	}
 
@@ -83,7 +79,7 @@ public class InitializationManager : MonoBehaviour {
 		keywordManager.StopKeywordRecognizer ();
 		owl.Play ();
 		Debug.Log ("Sag: Sag Waldkauz/Uhu/Schneeeule");
-		Debug.Log ("Saveword: three");
+		Debug.Log ("Saveword: four");
 	}
 
 	public void EndIntroduction () {
@@ -93,7 +89,6 @@ public class InitializationManager : MonoBehaviour {
 		stage++;
 		keywordManager.StopKeywordRecognizer ();
 		Debug.Log ("Initialisierung beendet, warte auf Ende vom Soundfile");
-        Debug.Log("Stage: " + stage);
 		end.Play ();
 	}
 }
