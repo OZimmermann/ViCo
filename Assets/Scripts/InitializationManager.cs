@@ -26,7 +26,7 @@ public class InitializationManager : MonoBehaviour {
 	void Start () {
 		stage = 1;
 		keywordManager = GetComponent<KeywordManager> ();
-		Debug.Log("Stage: " + stage);
+		//Debug.Log("Stage: " + stage);
 
         Eule.SetActive(false);
 
