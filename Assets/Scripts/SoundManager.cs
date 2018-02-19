@@ -49,7 +49,9 @@ public class SoundManager : MonoBehaviour {
 			break;
 		case 4: 
 			if (!end.isPlaying) {
-				SceneManager.LoadScene ("therapeuten_uebung", LoadSceneMode.Additive);
+				Debug.Log("new Scene will be loaded");
+				//SceneManager.LoadScene ("therapeuten_uebung", LoadSceneMode.Additive);
+				SceneManager.LoadSceneAsync("therapeuten_uebung", LoadSceneMode.Additive);
 			}
 			break;
 		default:
