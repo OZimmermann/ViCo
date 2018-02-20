@@ -13,6 +13,7 @@ public class InitializationManager : MonoBehaviour {
 	public KeywordManager keywordManager;
 
     public GameObject Eule;
+    public GameObject EulenAuswahl;
     public GameObject Leuchtkugel;
 
 	private int stage;
@@ -29,6 +30,7 @@ public class InitializationManager : MonoBehaviour {
 		//Debug.Log("Stage: " + stage);
 
         Eule.SetActive(false);
+        EulenAuswahl.SetActive(false);
 
         start.Play();
         Debug.Log("Sag: yes, okay (,ja)");
@@ -57,8 +59,8 @@ public class InitializationManager : MonoBehaviour {
 		case 4:
 			if (!end.isPlaying) {
 				Debug.Log("new Scene will be loaded");
-				//SceneManager.LoadScene ("therapeuten_uebung", LoadSceneMode.Additive);
-				SceneManager.LoadSceneAsync("03_therapeuten_uebung", LoadSceneMode.Additive);
+				SceneManager.LoadScene ("03_therapeuten_uebung", LoadSceneMode.Additive);
+				//SceneManager.LoadSceneAsync("03_therapeuten_uebung", LoadSceneMode.Additive);
 			}
 			break;
 		default:
@@ -75,7 +77,9 @@ public class InitializationManager : MonoBehaviour {
 	}
 
 	public void ChooseOwl () {
-		stage++;
+        EulenAuswahl.SetActive(true);
+
+        stage++;
 		keywordManager.StopKeywordRecognizer ();
 		owl.Play ();
 		Debug.Log ("Sag: Sag Waldkauz/Uhu/Schneeeule");
