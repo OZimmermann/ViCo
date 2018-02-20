@@ -1232,15 +1232,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1218026167}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bb63d1eba1394ec8a97436b19acf97e, type: 3}
+  m_Script: {fileID: 11500000, guid: 5661887db3892ca45bb9a35b77dc4ea4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   DrawMaterial: {fileID: 2100000, guid: 4b0f3315a044218428165ca0893aa0b5, type: 2}
   drawVisualMeshes: 1
-  mappingEnabled: 1
-  physicsLayer: 31
-  spatialMappingRenderer: {fileID: 0}
-  spatialMappingCollider: {fileID: 0}
 --- !u!4 &1218026171
 Transform:
   m_ObjectHideFlags: 0
