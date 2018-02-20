@@ -2,16 +2,18 @@
 
 public class RoomPositionObject : MonoBehaviour
 {
-	bool placing = false;
+    private int CountAirTap = 0;
+    private int AirTapEvenOdd;
 
 	// Called by GazeGestureManager when the user performs a Select gesture
 	void OnSelect()
 	{
 		// On each Select gesture, toggle whether the user is in placing mode.
-		placing = !placing;
+        CountAirTap++;
+        AirTapEvenOdd = CountAirTap / 2;
 
 		// If the user is in placing mode, display the spatial mapping mesh.
-		if (placing)
+        if(AirTapEvenOdd % 2 == 0 || CountAirTap == 2)
 		{
 			SpatialMapping.Instance.DrawVisualMeshes = true;
 		}
@@ -30,7 +32,7 @@ public class RoomPositionObject : MonoBehaviour
 
 			RaycastHit hitInfo;
 			if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
-				30.0f, SpatialMapping.PhysicsRaycastMask))
+				30.0f, SpatialMapping.PhysicsRaycastMask) && (AirTapEvenOdd % 2 == 0 || CountAirTap == 2))
 			{
 				// Move this object's parent object to
 				// where the raycast hit the Spatial Mapping mesh.
