@@ -9,7 +9,6 @@ public class WorldCursor : MonoBehaviour
     {
         // Grab the mesh renderer that's on the same object as this script.
         meshRenderer = this.gameObject.GetComponentInChildren<MeshRenderer>();
-        Debug.Log("hier kommen die DEBUG Ausgaben hin, script: World Cursor");
     }
 
     // Update is called once per frame
