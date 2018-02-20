@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/main.unity
+    path: Assets/Scenes/01_main.unity
     guid: eab4b8f5e123f446aa2e1c2b7e302afe
-  - enabled: 1
-    path: Assets/Scenes/initialisierung.unity
+  - enabled: 0
+    path: Assets/Scenes/02_initialisierung.unity
     guid: 8fa93c1483b114334a7f99b1149eb94a
   - enabled: 0
     path: Assets/Scenes/hausaufgabe.unity
@@ -21,5 +21,5 @@ EditorBuildSettings:
     path: Assets/Scenes/panikuebung.unity
     guid: c58a1ebee5a6847f4be3f3f266c67906
   - enabled: 1
-    path: Assets/Scenes/therapeuten_uebung.unity
+    path: Assets/Scenes/03_therapeuten_uebung.unity
     guid: 29d07ce7f109e46c490fed6c233fb8d4
