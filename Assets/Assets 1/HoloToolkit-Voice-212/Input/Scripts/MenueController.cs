@@ -11,9 +11,9 @@ public class MenueController : MonoBehaviour
 	public GameObject Anker;
 	public GameObject Pokal;
 	public GameObject Hantel;
-    public GameObject Einkaufen;
+    /*public GameObject Einkaufen;
     public GameObject Telefon;
-    public GameObject Uebung;
+    public GameObject Uebung;*/
 
 	public void HideMenue(){
         Debug.Log("Menü zu");
@@ -21,9 +21,9 @@ public class MenueController : MonoBehaviour
 		SurvivalKit.SetActive(false);
 		Graph.SetActive(false);
 		Pyramide.SetActive(false);	
-        Einkaufen.SetActive(false);
+        /*Einkaufen.SetActive(false);
         Telefon.SetActive(false);
-        Uebung.SetActive(false);
+        Uebung.SetActive(false);*/
         Anker.SetActive(false);	
 		Pokal.SetActive(false);	
 		Hantel.SetActive(false);
@@ -35,9 +35,9 @@ public class MenueController : MonoBehaviour
 		SurvivalKit.SetActive(false);
 		Graph.SetActive(false);
 		Pyramide.SetActive(false);
-        Einkaufen.SetActive(false);
+        /*Einkaufen.SetActive(false);
         Telefon.SetActive(false);
-        Uebung.SetActive(false);
+        Uebung.SetActive(false);*/
 
         Anker.SetActive(true);	
 		Pokal.SetActive(true);	
@@ -47,9 +47,9 @@ public class MenueController : MonoBehaviour
 	public void AnkerMenue(){
 		Graph.SetActive(false);
 		Pyramide.SetActive(false);
-        Einkaufen.SetActive(false);
+        /*Einkaufen.SetActive(false);
         Telefon.SetActive(false);
-        Uebung.SetActive(false);
+        Uebung.SetActive(false);*/
         Anker.SetActive(false);	
 		Pokal.SetActive(false);	
 		Hantel.SetActive(false);	
@@ -67,17 +67,17 @@ public class MenueController : MonoBehaviour
 		Pokal.SetActive(false);	
 		Hantel.SetActive(false);
 
-        Einkaufen.SetActive(true);
+        /*Einkaufen.SetActive(true);
         Telefon.SetActive(true);
-        Uebung.SetActive(true);
+        Uebung.SetActive(true);*/
     }
 
 	public void PokalMenue(){
 		SurvivalKit.SetActive(false);
 		Erinnerung.SetActive(false);
-        Einkaufen.SetActive(false);
+        /*Einkaufen.SetActive(false);
         Telefon.SetActive(false);
-        Uebung.SetActive(false);
+        Uebung.SetActive(false);*/
         Anker.SetActive(false);	
 		Pokal.SetActive(false);	
 		Hantel.SetActive(false);

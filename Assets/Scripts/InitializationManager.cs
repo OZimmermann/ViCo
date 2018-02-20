@@ -59,8 +59,8 @@ public class InitializationManager : MonoBehaviour {
 		case 4:
 			if (!end.isPlaying) {
 				Debug.Log("new Scene will be loaded");
-				SceneManager.LoadScene ("03_therapeuten_uebung", LoadSceneMode.Additive);
-				//SceneManager.LoadSceneAsync("03_therapeuten_uebung", LoadSceneMode.Additive);
+				SceneManager.LoadScene ("03_therapeuten_uebung", LoadSceneMode.Single);
+				//SceneManager.LoadSceneAsync("03_therapeuten_uebung", LoadSceneMode.Single);
 			}
 			break;
 		default:
@@ -88,6 +88,7 @@ public class InitializationManager : MonoBehaviour {
 
 	public void EndIntroduction () {
         Leuchtkugel.SetActive(false);
+        EulenAuswahl.SetActive(false);
         Eule.SetActive(true);
 
 		stage++;
