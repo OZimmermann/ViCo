@@ -6,7 +6,7 @@ using Academy.HoloToolkit.Unity;
 
 public class PokalCommands : MonoBehaviour
 {
-	public KeywordManager keywordManager;
+	private KeywordManager keywordManager;
 
     void OnSelect()
 	{

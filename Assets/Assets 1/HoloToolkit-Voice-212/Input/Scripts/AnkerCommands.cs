@@ -5,7 +5,7 @@ using Academy.HoloToolkit.Unity;
 
 public class AnkerCommands : MonoBehaviour
 {	
-	public KeywordManager keywordManager;
+	private KeywordManager keywordManager;
 
     void OnSelect()
     {
