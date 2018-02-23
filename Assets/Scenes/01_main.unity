@@ -277,7 +277,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage:
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &503275543 stripped
@@ -402,7 +402,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 707431658}
-  - component: {fileID: 707431657}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -410,53 +409,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &707431657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 707431656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02328e524282b784b904230fa8760949, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
-  RecognizerStart: 0
-  KeywordsAndResponses:
-  - Keyword: open
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1298819707}
-          m_MethodName: BaseMenue
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument:
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-  - Keyword: close
-    Response:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1298819707}
-          m_MethodName: HideMenue
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument:
-            m_BoolArgument: 0
-          m_CallState: 2
-      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
 --- !u!4 &707431658
 Transform:
   m_ObjectHideFlags: 0
@@ -487,8 +439,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad9b273b2ab14680b70d12aa771fe59, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &749537051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -498,8 +450,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d8fe9e974b2b4d49955844466ee0217, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keywordManager: {fileID: 0}
+--- !u!114 &749537053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 749537048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02328e524282b784b904230fa8760949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RecognizerStart: 1
+  KeywordsAndResponses:
+  - Keyword: back
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1298819707}
+          m_MethodName: BaseMenue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &784051979
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,7 +857,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage:
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1013647244
@@ -1035,19 +1018,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300002, guid: 4bd4aab853f9309439c4249fa8f5f51b, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 2100000, guid: 3ded392a379084048b310aa1d4b6ecba, type: 3}
     - target: {fileID: 2300000, guid: 4bd4aab853f9309439c4249fa8f5f51b, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 2100000, guid: 3ded392a379084048b310aa1d4b6ecba, type: 3}
     - target: {fileID: 2300004, guid: 4bd4aab853f9309439c4249fa8f5f51b, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 2100000, guid: 3ded392a379084048b310aa1d4b6ecba, type: 3}
     - target: {fileID: 2300006, guid: 4bd4aab853f9309439c4249fa8f5f51b, type: 3}
       propertyPath: m_Materials.Array.data[0]
-      value:
+      value: 
       objectReference: {fileID: 2100000, guid: 3ded392a379084048b310aa1d4b6ecba, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4bd4aab853f9309439c4249fa8f5f51b, type: 3}
@@ -1152,6 +1135,7 @@ GameObject:
   - component: {fileID: 1298819708}
   - component: {fileID: 1298819704}
   - component: {fileID: 1298819707}
+  - component: {fileID: 1298819709}
   m_Layer: 0
   m_Name: "Men\xFC"
   m_TagString: Untagged
@@ -1168,19 +1152,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9c273056f4d794548a9ab47169902c36, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1298819705
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1298819703}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad9b273b2ab14680b70d12aa771fe59, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1298819706
 Transform:
   m_ObjectHideFlags: 0
@@ -1213,8 +1197,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9fdcbd5482538e34093aa9459dd7bf46, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
   Erinnerung: {fileID: 896763933}
   SurvivalKit: {fileID: 818644070}
   Pyramide: {fileID: 1999281337}
@@ -1231,11 +1215,58 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1298819703}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 81200e1caa368f9409c3e08987a20bca, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1298819709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1298819703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02328e524282b784b904230fa8760949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RecognizerStart: 0
+  KeywordsAndResponses:
+  - Keyword: open
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1298819707}
+          m_MethodName: BaseMenue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - Keyword: close
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1298819707}
+          m_MethodName: HideMenue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &1349985064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,6 +1310,7 @@ GameObject:
   - component: {fileID: 1349985070}
   - component: {fileID: 1349985069}
   - component: {fileID: 1349985077}
+  - component: {fileID: 1349985071}
   m_Layer: 0
   m_Name: Anker
   m_TagString: Untagged
@@ -1310,8 +1342,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4c550d7ba9560b40a3bf10b7386552b, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keywordManager: {fileID: 0}
 --- !u!95 &1349985070
 Animator:
   serializedVersion: 3
@@ -1327,9 +1360,39 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage:
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1349985071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1349985067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02328e524282b784b904230fa8760949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RecognizerStart: 1
+  KeywordsAndResponses:
+  - Keyword: back
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1298819707}
+          m_MethodName: BaseMenue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!4 &1349985074
 Transform:
   m_ObjectHideFlags: 0
@@ -1395,8 +1458,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad9b273b2ab14680b70d12aa771fe59, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1481203583
 Prefab:
   m_ObjectHideFlags: 0
@@ -1718,8 +1781,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c02d25cb580374605832fd807f58074f, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1723983114 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: e27a19ecd8ccc884790d5bbceefdf5f9, type: 3}
@@ -1900,8 +1963,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6672321fe6aab2e4ea846a0fb553bb0c, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keywordManager: {fileID: 0}
 --- !u!114 &1873529102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1911,8 +1975,38 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ad9b273b2ab14680b70d12aa771fe59, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1873529104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1873529099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02328e524282b784b904230fa8760949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RecognizerStart: 1
+  KeywordsAndResponses:
+  - Keyword: back
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1298819707}
+          m_MethodName: BaseMenue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &1965713353 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100010, guid: 4bd4aab853f9309439c4249fa8f5f51b, type: 3}
