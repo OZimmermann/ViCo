@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 492d94c9cd43240ef9d8cc52fa946492
-timeCreated: 1519128500
+guid: 6275b95919384b84da930d11b09b94c1
+timeCreated: 1519397600
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -21,8 +21,8 @@ ModelImporter:
     400000: mittlere_Box
     400002: Null
     400004: obere_Box
-    400006: //RootNode
-    400008: Pyramide
+    400006: Pyramide
+    400008: //RootNode
     400010: Pyramide_1
     400012: Pyramide_1_2
     400014: Pyramide_1_3

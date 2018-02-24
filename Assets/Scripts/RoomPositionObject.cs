@@ -3,20 +3,28 @@
 public class RoomPositionObject : MonoBehaviour
 {
     private int CountAirTap = 0;
-    //private int AirTapEvenOdd;
+    private int AirTapEvenOdd;
+
+    public Collider PyramideCollider;
+    public GameObject Pyramide;
+
+    public void getColliderPyramide()
+    {
+        PyramideCollider = Pyramide.GetComponent<Collider>();
+    }
 
     // Called by GazeGestureManager when the user performs a Select gesture
     void OnSelect()
 	{
-		// On each Select gesture:
+		// On each Select gesture, count up
         CountAirTap++;
-        //AirTapEvenOdd = CountAirTap / 2;
+        AirTapEvenOdd = CountAirTap / 12;
         Debug.Log("CountAirTap: " + CountAirTap);
         //Debug.Log("AirTapEvenOdd: " + AirTapEvenOdd);
 
         // If the user is in placing mode, display the spatial mapping mesh.
         //if(AirTapEvenOdd % 2 == 0 || CountAirTap == 2)
-        if (CountAirTap % 2 == 0) // even number
+        if (AirTapEvenOdd % 2 == 0) // even number
         {
 			SpatialMapping.Instance.DrawVisualMeshes = true;
 		}
@@ -24,7 +32,6 @@ public class RoomPositionObject : MonoBehaviour
 		else
 		{
 			SpatialMapping.Instance.DrawVisualMeshes = false;
-            Debug.Log("CountAirTap (in der else Schleife): " + CountAirTap);
         }
 	}
 	// Update is called once per frame
@@ -37,19 +44,23 @@ public class RoomPositionObject : MonoBehaviour
 			RaycastHit hitInfo;
 
             /*if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
-                30.0f, SpatialMapping.PhysicsRaycastMask) && (AirTapEvenOdd % 2 == 0 || CountAirTap == 2))*/
-            if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
-                30.0f, SpatialMapping.PhysicsRaycastMask) && CountAirTap % 2 == 0)
+            30.0f, SpatialMapping.PhysicsRaycastMask) && (AirTapEvenOdd % 2 == 0 || CountAirTap == 2))*/
+            if(AirTapEvenOdd == 0)
+            {
+                //Do nothing
+            }
+            else if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
+                30.0f, SpatialMapping.PhysicsRaycastMask) && AirTapEvenOdd % 2 == 0)
             {
 				// Move this object to where the raycast hit the Spatial Mapping mesh.
 				this.transform.position = hitInfo.point;
 
-				// Rotate this object to face the user.
-				Quaternion toQuat = Camera.main.transform.localRotation;
-				toQuat.x = 0;
+                // Rotate this object to face the user.
+                /*Quaternion toQuat = Camera.main.transform.localRotation;
+                toQuat.x = 0;
+                toQuat.y = 10;
 				toQuat.z = 0;
-				this.transform.rotation = toQuat;
-			}
-
+				this.transform.rotation = toQuat;*/
+        }        
 	}
 }
