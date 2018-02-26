@@ -36,6 +36,7 @@ public class SteinePosition : MonoBehaviour
             SpatialMapping.Instance.DrawVisualMeshes = false;
         }
     }
+
     // Update is called once per frame
     void Update()
     {
@@ -54,7 +55,6 @@ public class SteinePosition : MonoBehaviour
         else if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
         30.0f, pyramideClass.pyramideLayerMask) && AirTapEvenOdd % 2 == 0)
         {
-
             // Move this object to where the raycast hit the Spatial Mapping mesh.
             this.transform.position = hitInfo.point;
 
