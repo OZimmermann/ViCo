@@ -8,7 +8,7 @@ public class PyramideScript : MonoBehaviour {
 
     public void Awake()
     {
-        pyramideLayerMask = 1 << 8;
+        pyramideLayerMask = 1 << 10;
         Debug.Log("pyramideLayerMask: " + pyramideLayerMask);
     }
 }
