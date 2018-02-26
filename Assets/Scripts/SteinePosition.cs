@@ -8,15 +8,12 @@ public class SteinePosition : MonoBehaviour
     private int AirTapEvenOdd;
     
     private PyramideScript pyramideClass;
-    public GameObject pyramideObject;
+    //public GameObject pyramideObject;
 
     void Start()
     {
         //pyramideClass = pyramideObject.GetComponent<PyramideScript>();
-        pyramideClass = GetComponent<PyramideScript>();
-        pyramideClass.testtesttest();
-        //Debug.Log("irgendeineZahl: " + pyramideClass.irgendeineZahl);
-        //Debug.Log("LAYERMASK SCHEISSE: " + pyramideClass.pyramideLayerMask);
+        pyramideClass = GameObject.FindWithTag("Pyramide").GetComponent<PyramideScript>();
     }
 
     // Called by GazeGestureManager when the user performs a Select gesture
@@ -57,7 +54,6 @@ public class SteinePosition : MonoBehaviour
         else if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
         30.0f, pyramideClass.pyramideLayerMask) && AirTapEvenOdd % 2 == 0)
         {
-            Debug.Log("LAYERMASK: " + pyramideClass.pyramideLayerMask);
 
             // Move this object to where the raycast hit the Spatial Mapping mesh.
             this.transform.position = hitInfo.point;
