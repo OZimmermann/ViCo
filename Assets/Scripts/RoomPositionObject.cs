@@ -2,28 +2,20 @@
 
 public class RoomPositionObject : MonoBehaviour
 {
-    private int CountAirTap = 0;
+    private int CountAirTapPyramide = 0;
     private int AirTapEvenOdd;
-
-    public Collider PyramideCollider;
-    public GameObject Pyramide;
-
-    public void getColliderPyramide()
-    {
-        PyramideCollider = Pyramide.GetComponent<Collider>();
-    }
 
     // Called by GazeGestureManager when the user performs a Select gesture
     void OnSelect()
 	{
 		// On each Select gesture, count up
-        CountAirTap++;
-        AirTapEvenOdd = CountAirTap / 12;
-        Debug.Log("CountAirTap: " + CountAirTap);
+        CountAirTapPyramide++;
+        AirTapEvenOdd = CountAirTapPyramide / 1;
+        Debug.Log("CountAirTapPyramide: " + CountAirTapPyramide);
         //Debug.Log("AirTapEvenOdd: " + AirTapEvenOdd);
 
         // If the user is in placing mode, display the spatial mapping mesh.
-        //if(AirTapEvenOdd % 2 == 0 || CountAirTap == 2)
+        //if(AirTapEvenOdd % 2 == 0 || CountAirTapPyramide == 2)
         if (AirTapEvenOdd % 2 == 0) // even number
         {
 			SpatialMapping.Instance.DrawVisualMeshes = true;
@@ -44,7 +36,7 @@ public class RoomPositionObject : MonoBehaviour
 			RaycastHit hitInfo;
 
             /*if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
-            30.0f, SpatialMapping.PhysicsRaycastMask) && (AirTapEvenOdd % 2 == 0 || CountAirTap == 2))*/
+            30.0f, SpatialMapping.PhysicsRaycastMask) && (AirTapEvenOdd % 2 == 0 || CountAirTapPyramide == 2))*/
             if(AirTapEvenOdd == 0)
             {
                 //Do nothing
@@ -56,11 +48,10 @@ public class RoomPositionObject : MonoBehaviour
 				this.transform.position = hitInfo.point;
 
                 // Rotate this object to face the user.
-                /*Quaternion toQuat = Camera.main.transform.localRotation;
+                Quaternion toQuat = Camera.main.transform.localRotation;
                 toQuat.x = 0;
-                toQuat.y = 10;
 				toQuat.z = 0;
-				this.transform.rotation = toQuat;*/
+				this.transform.rotation = toQuat;
         }        
 	}
 }

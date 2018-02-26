@@ -4,26 +4,31 @@ using UnityEngine;
 
 public class SteinePosition : MonoBehaviour
 {
-    private int CountAirTap = 0;
+    private int CountAirTapSteine = 0;
     private int AirTapEvenOdd;
-
-    public RoomPositionObject roomPositionObject;
+    
+    private PyramideScript pyramideClass;
+    public GameObject pyramideObject;
 
     void Start()
     {
-        roomPositionObject = GetComponent<RoomPositionObject>();
+        //pyramideClass = pyramideObject.GetComponent<PyramideScript>();
+        pyramideClass = GetComponent<PyramideScript>();
+        pyramideClass.testtesttest();
+        //Debug.Log("irgendeineZahl: " + pyramideClass.irgendeineZahl);
+        //Debug.Log("LAYERMASK SCHEISSE: " + pyramideClass.pyramideLayerMask);
     }
 
     // Called by GazeGestureManager when the user performs a Select gesture
     void OnSelect()
     {
         // On each Select gesture, count up
-        CountAirTap++;
-        AirTapEvenOdd = CountAirTap / 12;
-        //Debug.Log("AirTapEvenOdd: " + AirTapEvenOdd);
+        CountAirTapSteine++;
+        AirTapEvenOdd = CountAirTapSteine / 1;
+        Debug.Log("CountAirTapSteine: " + CountAirTapSteine);
 
         // If the user is in placing mode, display the spatial mapping mesh.
-        //if(AirTapEvenOdd % 2 == 0 || CountAirTap == 2)
+        //if(AirTapEvenOdd % 2 == 0 || CountAirTapSteine == 2)
         if (AirTapEvenOdd % 2 == 0) // even number
         {
             SpatialMapping.Instance.DrawVisualMeshes = true;
@@ -44,23 +49,24 @@ public class SteinePosition : MonoBehaviour
         RaycastHit hitInfo;
 
         /*if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
-        30.0f, SpatialMapping.PhysicsRaycastMask) && (AirTapEvenOdd % 2 == 0 || CountAirTap == 2))*/
+        30.0f, SpatialMapping.PhysicsRaycastMask) && (AirTapEvenOdd % 2 == 0 || CountAirTapSteine == 2))*/
         if (AirTapEvenOdd == 0)
         {
             //Do nothing
         }
         else if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
-            30.0f, roomPositionObject.PyramideCollider) && AirTapEvenOdd % 2 == 0)
+        30.0f, pyramideClass.pyramideLayerMask) && AirTapEvenOdd % 2 == 0)
         {
+            Debug.Log("LAYERMASK: " + pyramideClass.pyramideLayerMask);
+
             // Move this object to where the raycast hit the Spatial Mapping mesh.
             this.transform.position = hitInfo.point;
 
             // Rotate this object to face the user.
-            /*Quaternion toQuat = Camera.main.transform.localRotation;
+            Quaternion toQuat = Camera.main.transform.localRotation;
             toQuat.x = 0;
-            toQuat.y = 10;
             toQuat.z = 0;
-            this.transform.rotation = toQuat;*/
+            this.transform.rotation = toQuat;
         }
     }
 }
