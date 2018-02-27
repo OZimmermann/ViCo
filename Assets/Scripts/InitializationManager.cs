@@ -41,7 +41,7 @@ public class InitializationManager : MonoBehaviour {
 		case 1:
 			if (!start.isPlaying) {
 				keywordManager.StartKeywordRecognizer ();
-				//Debug.Log ("KeywordManager started");
+				Debug.Log ("KeywordManager started");
 			}
 			break;
 		case 2: 
