@@ -1,14 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Academy.HoloToolkit.Unity;
+
 
 public class HantelCommands : MonoBehaviour
 {
-	// Called by GazeGestureManager when the user performs a Select gesture
+	private KeywordManager keywordManager;
+
 	void OnSelect()
 	{
-        Debug.Log("Anker offen");
+        Debug.Log("Hantel offen");
         GetComponentInParent<MenueController> ().HantelMenue ();
+		keywordManager.StartKeywordRecognizer ();
 	}
 }
 

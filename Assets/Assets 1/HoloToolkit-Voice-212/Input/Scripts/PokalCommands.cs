@@ -1,13 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Academy.HoloToolkit.Unity;
+
 
 public class PokalCommands : MonoBehaviour
 {
-    // Called by GazeGestureManager when the user performs a Select gesture
+	private KeywordManager keywordManager;
+
     void OnSelect()
 	{
+		Debug.Log("Pokal offen");
 		GetComponentInParent<MenueController> ().PokalMenue ();
+		keywordManager.StartKeywordRecognizer ();
     }
 }
 
