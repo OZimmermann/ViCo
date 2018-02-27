@@ -8,12 +8,10 @@ public class SteinePosition : MonoBehaviour
     private int AirTapEvenOdd;
     
     private PyramideScript pyramideClass;
-    //public GameObject pyramideObject;
 
     void Start()
     {
-        //pyramideClass = pyramideObject.GetComponent<PyramideScript>();
-        pyramideClass = GameObject.FindWithTag("Pyramide").GetComponent<PyramideScript>();
+        pyramideClass = GameObject.Find("Pyramide4").GetComponent<PyramideScript>();
     }
 
     // Called by GazeGestureManager when the user performs a Select gesture
@@ -46,8 +44,6 @@ public class SteinePosition : MonoBehaviour
 
         RaycastHit hitInfo;
 
-        /*if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
-        30.0f, SpatialMapping.PhysicsRaycastMask) && (AirTapEvenOdd % 2 == 0 || CountAirTapSteine == 2))*/
         if (AirTapEvenOdd == 0)
         {
             //Do nothing

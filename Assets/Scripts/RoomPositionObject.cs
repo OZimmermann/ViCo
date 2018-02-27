@@ -35,13 +35,13 @@ public class RoomPositionObject : MonoBehaviour
 
 			RaycastHit hitInfo;
 
-            /*if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
-            30.0f, SpatialMapping.PhysicsRaycastMask) && (AirTapEvenOdd % 2 == 0 || CountAirTapPyramide == 2))*/
             if(AirTapEvenOdd == 0)
             {
                 //Do nothing
             }
-            else if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
+        /*if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
+            30.0f, SpatialMapping.PhysicsRaycastMask) && (AirTapEvenOdd % 2 == 0 || CountAirTapPyramide == 2))*/
+        else if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
                 30.0f, SpatialMapping.PhysicsRaycastMask) && AirTapEvenOdd % 2 == 0)
             {
 				// Move this object to where the raycast hit the Spatial Mapping mesh.
