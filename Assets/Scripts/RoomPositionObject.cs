@@ -10,7 +10,7 @@ public class RoomPositionObject : MonoBehaviour
 	{
 		// On each Select gesture, count up
         CountAirTapPyramide++;
-        AirTapEvenOdd = CountAirTapPyramide / 1;
+        AirTapEvenOdd = CountAirTapPyramide / 8;
         Debug.Log("CountAirTapPyramide: " + CountAirTapPyramide);
         //Debug.Log("AirTapEvenOdd: " + AirTapEvenOdd);
 

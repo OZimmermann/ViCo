@@ -19,7 +19,7 @@ public class SteinePosition : MonoBehaviour
     {
         // On each Select gesture, count up
         CountAirTapSteine++;
-        AirTapEvenOdd = CountAirTapSteine / 1;
+        AirTapEvenOdd = CountAirTapSteine / 8;
         Debug.Log("CountAirTapSteine: " + CountAirTapSteine);
 
         // If the user is in placing mode, display the spatial mapping mesh.
