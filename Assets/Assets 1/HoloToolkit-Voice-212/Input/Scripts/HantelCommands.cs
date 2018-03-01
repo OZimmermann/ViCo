@@ -6,13 +6,13 @@ using Academy.HoloToolkit.Unity;
 
 public class HantelCommands : MonoBehaviour
 {
-	private KeywordManager keywordManager;
+	//private KeywordManager keywordManager;
 
 	void OnSelect()
 	{
         Debug.Log("Hantel offen");
         GetComponentInParent<MenueController> ().HantelMenue ();
-		keywordManager.StartKeywordRecognizer ();
+		//keywordManager.StartKeywordRecognizer ();
 	}
 }
 
