@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/02_initialisierung.unity
     guid: 8fa93c1483b114334a7f99b1149eb94a
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/03_therapeuten_uebung.unity
+    guid: 29d07ce7f109e46c490fed6c233fb8d4
+  - enabled: 1
     path: Assets/Scenes/hausaufgabe.unity
     guid: 22bf67a6de23b4b03b4f20226de7e831
   - enabled: 0
@@ -21,5 +24,11 @@ EditorBuildSettings:
     path: Assets/Scenes/panikuebung.unity
     guid: c58a1ebee5a6847f4be3f3f266c67906
   - enabled: 1
-    path: Assets/Scenes/03_therapeuten_uebung.unity
-    guid: 29d07ce7f109e46c490fed6c233fb8d4
+    path: Assets/Scenes/pyramide.unity
+    guid: 1020b453cddc6cd47b831b41cf21b915
+  - enabled: 1
+    path: Assets/Scenes/survivalKit.unity
+    guid: 7866ea541c2339d4ba1136afcec28337
+  - enabled: 1
+    path: Assets/Scenes/erinnerung.unity
+    guid: 280b8c5ec526ff54bb855f5eeaefbd3c

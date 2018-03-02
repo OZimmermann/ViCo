@@ -1,12 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Academy.HoloToolkit.Unity;
+using UnityEngine.SceneManagement;
 
 public class SurvivalKitCommands : MonoBehaviour
 {
-	void OnSelect ()
+
+    //GetComponentInParent<MenueController>().SurvivalKitMenue();
+ 
+    void OnSelect()
     {
-        Debug.Log("SurvivalKit offen");
-        GetComponentInParent<MenueController>().SurvivalKitMenue();
+        Debug.Log("Scene 'Survival Kit' will be loaded");
+        SceneManager.LoadScene("survivalKit", LoadSceneMode.Single);
     }
 }
