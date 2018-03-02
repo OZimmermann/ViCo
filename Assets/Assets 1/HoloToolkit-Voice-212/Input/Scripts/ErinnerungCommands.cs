@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 
 public class ErinnerungCommands : MonoBehaviour {
 
-    // GetComponentInParent<MenueController>().ErinnerungMenue();
-
     void OnSelect()
     {
         Debug.Log("Scene 'Erinnerug' will be loaded");

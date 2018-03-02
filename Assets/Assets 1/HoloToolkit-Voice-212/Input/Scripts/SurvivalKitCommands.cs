@@ -5,10 +5,7 @@ using Academy.HoloToolkit.Unity;
 using UnityEngine.SceneManagement;
 
 public class SurvivalKitCommands : MonoBehaviour
-{
-
-    //GetComponentInParent<MenueController>().SurvivalKitMenue();
- 
+{ 
     void OnSelect()
     {
         Debug.Log("Scene 'Survival Kit' will be loaded");
