@@ -4,11 +4,11 @@ using UnityEngine;
 using Academy.HoloToolkit.Unity;
 using UnityEngine.SceneManagement;
 
-public class ErinnerungCommands : MonoBehaviour {
+public class reviewCommands : MonoBehaviour {
 
     void OnSelect()
     {
-        Debug.Log("Scene 'Erinnerug' will be loaded");
-        SceneManager.LoadScene("erinnerung", LoadSceneMode.Single);
+        Debug.Log("Scene 'Wochenrückblick' will be loaded");
+        SceneManager.LoadScene("wochenrückblick", LoadSceneMode.Single);
     }
 }

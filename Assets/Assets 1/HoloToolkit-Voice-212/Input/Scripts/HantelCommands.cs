@@ -12,7 +12,7 @@ public class HantelCommands : MonoBehaviour
 	{
         Debug.Log("Hantel offen");
         GetComponentInParent<MenueController> ().HantelMenue ();
-		//keywordManager.StartKeywordRecognizer ();
+		//skeywordManager.StartKeywordRecognizer ();
 	}
 }
 

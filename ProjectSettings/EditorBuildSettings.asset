@@ -32,3 +32,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/erinnerung.unity
     guid: 280b8c5ec526ff54bb855f5eeaefbd3c
+  - enabled: 1
+    path: "Assets/Scenes/wochenr\xFCckblick.unity"
+    guid: c9d594a4c02c7124a902d278cc7951f4

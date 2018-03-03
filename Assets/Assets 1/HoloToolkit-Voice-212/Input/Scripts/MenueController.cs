@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Academy.HoloToolkit.Unity;
 
 public class MenueController : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class MenueController : MonoBehaviour
     public GameObject Uebung;
     public GameObject Präsentation;
 
-	public void HideMenue(){
+    public void HideMenue(){
         Debug.Log("Menü zu");
         Erinnerung.SetActive(false);
 		SurvivalKit.SetActive(false);

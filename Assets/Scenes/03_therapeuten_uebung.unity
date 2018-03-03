@@ -1069,9 +1069,7 @@ MonoBehaviour:
   Einkaufen: {fileID: 733648911}
   Telefon: {fileID: 1733864436}
   Uebung: {fileID: 237033295}
-  SurvivalBox: {fileID: 1590381483}
   "Pr\xE4sentation": {fileID: 0}
-  Foto: {fileID: 0}
 --- !u!114 &267715178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2101,6 +2099,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.28321287, y: 0.14919433, z: 0}
   m_Center: {x: 2.6503168e-33, y: -0.021413572, z: 0}
+--- !u!114 &781741073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 781741067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ad9b273b2ab14680b70d12aa771fe59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &781741074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 781741067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7fe661cb2d1cc5498a258523115c73b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &831161253
 Prefab:
   m_ObjectHideFlags: 0
@@ -4328,10 +4348,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ba81538a93d22493caf51f375be3f575, type: 3}
   m_IsPrefabParent: 0
---- !u!1 &1590381483 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100088, guid: ba81538a93d22493caf51f375be3f575, type: 3}
-  m_PrefabInternal: {fileID: 1590381482}
 --- !u!4 &1590381484 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400088, guid: ba81538a93d22493caf51f375be3f575, type: 3}
@@ -5834,6 +5850,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
+  - Keyword: back
+    Response:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2076021901}
+          m_MethodName: BaseMenue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!114 &2076021901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5855,9 +5888,7 @@ MonoBehaviour:
   Einkaufen: {fileID: 1856910459}
   Telefon: {fileID: 760047346}
   Uebung: {fileID: 1333105481}
-  SurvivalBox: {fileID: 0}
   "Pr\xE4sentation": {fileID: 98164515}
-  Foto: {fileID: 0}
 --- !u!114 &2076021902
 MonoBehaviour:
   m_ObjectHideFlags: 0
