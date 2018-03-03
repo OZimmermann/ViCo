@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Academy.HoloToolkit.Unity;
 
 public class MenueController : MonoBehaviour
 {
+    // Menü
 	public GameObject Erinnerung;
 	public GameObject SurvivalKit;
 	public GameObject Pyramide;
@@ -14,8 +16,9 @@ public class MenueController : MonoBehaviour
     public GameObject Einkaufen;
     public GameObject Telefon;
     public GameObject Uebung;
+    public GameObject Präsentation;
 
-	public void HideMenue(){
+    public void HideMenue(){
         Debug.Log("Menü zu");
         Erinnerung.SetActive(false);
 		SurvivalKit.SetActive(false);
@@ -27,7 +30,8 @@ public class MenueController : MonoBehaviour
         Anker.SetActive(false);	
 		Pokal.SetActive(false);	
 		Hantel.SetActive(false);
-	}
+        Präsentation.SetActive(false);
+    }
 
 	public void BaseMenue(){
 		Debug.Log("Menü offen");
@@ -38,6 +42,7 @@ public class MenueController : MonoBehaviour
         Einkaufen.SetActive(false);
         Telefon.SetActive(false);
         Uebung.SetActive(false);
+        Präsentation.SetActive(false);
 
         Anker.SetActive(true);	
 		Pokal.SetActive(true);	
@@ -52,9 +57,10 @@ public class MenueController : MonoBehaviour
         Uebung.SetActive(false);
         Anker.SetActive(false);	
 		Pokal.SetActive(false);	
-		Hantel.SetActive(false);	
+		Hantel.SetActive(false);
+        Präsentation.SetActive(false);
 
-		Erinnerung.SetActive(true);
+        Erinnerung.SetActive(true);
 		SurvivalKit.SetActive(true);
 	}
 
@@ -70,6 +76,7 @@ public class MenueController : MonoBehaviour
         Einkaufen.SetActive(true);
         Telefon.SetActive(true);
         Uebung.SetActive(true);
+        Präsentation.SetActive(true);
     }
 
 	public void PokalMenue(){
@@ -81,6 +88,7 @@ public class MenueController : MonoBehaviour
         Anker.SetActive(false);	
 		Pokal.SetActive(false);	
 		Hantel.SetActive(false);
+        Präsentation.SetActive(false);
 
         Graph.SetActive(true);
 		Pyramide.SetActive(true);	

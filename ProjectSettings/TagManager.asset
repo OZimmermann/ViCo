@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Erinnerung
   - SurvivalKit
+  - Hantel
+  - Graph
+  - Pokal
+  - Anker
+  - Pyramide
   layers:
   - Default
   - TransparentFX
@@ -15,10 +20,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - SpatialMapping
+  - Cursor
+  - Regal
+  - Cube
   - 
   - 
   - 
