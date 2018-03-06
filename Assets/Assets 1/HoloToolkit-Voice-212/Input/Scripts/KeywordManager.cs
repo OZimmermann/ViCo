@@ -54,7 +54,7 @@ namespace Academy.HoloToolkit.Unity
 
                 if (RecognizerStart == RecognizerStartBehavior.AutoStart)
                 {
-                    Debug.Log("ich höre hier zu");
+                    //Debug.Log("ich höre hier zu");
                     keywordRecognizer.Start();
                 }
             }
@@ -81,7 +81,7 @@ namespace Academy.HoloToolkit.Unity
             // Check to make sure the recognized keyword exists in the methods dictionary, then invoke the corresponding method.
             if (responses.TryGetValue(args.text, out keywordResponse))
             {
-                Debug.Log("Ich bin im StartKeyWordRecognizer_OnPhrase");
+                //Debug.Log("Ich bin im StartKeyWordRecognizer_OnPhrase");
                 keywordResponse.Invoke();
             }
         }

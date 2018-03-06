@@ -49,7 +49,7 @@ public class ExerciseManager : MonoBehaviour {
     public void aufgabe()
     {
         beginn.Play();
-        Debug.Log("Sag: shit");
+        Debug.Log("Sag: blackout");
     }
 
     public void paniksituation()
