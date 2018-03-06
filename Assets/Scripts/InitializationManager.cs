@@ -16,7 +16,7 @@ public class InitializationManager : MonoBehaviour {
     public GameObject EulenAuswahl;
     public GameObject Leuchtkugel;
 
-	private int stage;
+	public int stage;
 	/*
 	 * stage = 1 // start introduction
 	 * stage = 2 // ChooseGender
@@ -66,7 +66,13 @@ public class InitializationManager : MonoBehaviour {
 		default:
 			break;
 		}
-	}
+
+        if(Input.GetKeyDown("space"))
+        {
+            ChooseGender();
+        }
+
+    }
 
 	public void ChooseGender () {
 		stage++;

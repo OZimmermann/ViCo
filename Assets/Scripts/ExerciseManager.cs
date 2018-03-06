@@ -10,22 +10,14 @@ public class ExerciseManager : MonoBehaviour {
     public AudioSource prototyp;
     public AudioSource angstDavor;
     public AudioSource beginn;
-    public AudioSource panik;
-    public AudioSource übung;
-    public AudioSource panikDanach;
-    public AudioSource angstDanach;
-    public AudioSource belohnung;
 
     public KeywordManager keywordManager;
-
-    public GameObject FotoPanik;
 
     // Use this for initialization
     void Start()
     {
         keywordManager = GetComponent<KeywordManager>();
         uni.Play();
-        FotoPanik.SetActive(false);
         Debug.Log("Sag: yes");
     }
 
@@ -49,38 +41,7 @@ public class ExerciseManager : MonoBehaviour {
     public void aufgabe()
     {
         beginn.Play();
-        Debug.Log("Sag: blackout");
+        Debug.Log("Scene 'Panik' will be loaded");
+        SceneManager.LoadScene("panikuebung", LoadSceneMode.Single);
     }
-
-    public void paniksituation()
-    {
-        panik.Play();
-        Debug.Log("Sag: help me");
-    }
-
-    public void panikaufgabe()
-    {
-        übung.Play();
-        FotoPanik.SetActive(true);
-        Debug.Log("Sag: thanks");
-    }
-
-    public void panikfertig()
-    {
-        FotoPanik.SetActive(false);
-        panikDanach.Play();
-        Debug.Log("Sag: no");
-    }
-
-    public void aufgabeFortsetzen()
-    {
-        angstDanach.Play();
-        Debug.Log("Sag: ready");
-    }
-
-    public void belohnungVorschlag()
-    {
-        belohnung.Play();
-    }
-
 }

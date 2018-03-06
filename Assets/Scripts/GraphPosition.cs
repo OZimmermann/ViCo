@@ -12,8 +12,8 @@ public class GraphPosition : MonoBehaviour {
     {
         // On each Select gesture, count up
         CountAirTapGraph++;
-        AirTapEvenOdd = CountAirTapGraph / 2;
-        Debug.Log("CountAirTapGraph: " + CountAirTapGraph);
+        AirTapEvenOdd = CountAirTapGraph / 3;
+        //Debug.Log("CountAirTapGraph: " + CountAirTapGraph);
         Debug.Log("AirTapEvenOdd: " + AirTapEvenOdd);
 
         // If the user is in placing mode, display the spatial mapping mesh.
