@@ -16,6 +16,8 @@ public class InitializationManager : MonoBehaviour {
     public GameObject EulenAuswahl;
     public GameObject Leuchtkugel;
 
+    //private int counter; // for keyboard input
+
 	public int stage;
 	/*
 	 * stage = 1 // start introduction
@@ -67,10 +69,26 @@ public class InitializationManager : MonoBehaviour {
 			break;
 		}
 
+        /*
+        // Keyboard input instead of speach input
         if(Input.GetKeyDown("space"))
         {
-            ChooseGender();
+            counter++;
+            
+            if (counter == 1)
+            {
+                ChooseGender();
+            }
+            else if(counter == 2)
+            {
+                ChooseOwl();
+            }
+            else if (counter == 3)
+            {
+                EndIntroduction();
+            }
         }
+        */
 
     }
 
@@ -93,7 +111,6 @@ public class InitializationManager : MonoBehaviour {
 	}
 
 	public void EndIntroduction () {
-        Leuchtkugel.SetActive(false);
         EulenAuswahl.SetActive(false);
         Eule.SetActive(true);
 

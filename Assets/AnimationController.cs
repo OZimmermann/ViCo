@@ -8,6 +8,7 @@ public class AnimationController : MonoBehaviour {
 
     Animator anim;
     int move = Animator.StringToHash("UebergangEulenauswahl");
+    int fusion = Animator.StringToHash("Fusion");
 
 	// Use this for initialization
 	void Start () {
@@ -18,10 +19,15 @@ public class AnimationController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //Debug.Log("initializationManager.stage: " + initializationManager.stage);
+        //Debug.Log("Stage: " + initializationManager.stage);
 
         if (initializationManager.stage == 2) {
             anim.SetTrigger(move);
         }
-	}
+
+        if (initializationManager.stage == 4)
+        {
+            anim.SetTrigger(fusion);
+        }
+    }
 }
