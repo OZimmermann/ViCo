@@ -13,6 +13,8 @@ public class ExerciseManager : MonoBehaviour {
 
     public KeywordManager keywordManager;
 
+    private int stage;
+
     // Use this for initialization
     void Start()
     {
@@ -24,6 +26,17 @@ public class ExerciseManager : MonoBehaviour {
     void Update()
     {
         keywordManager.StartKeywordRecognizer();
+
+        switch(stage)
+        {
+            case 1:
+                if (!beginn.isPlaying)
+                {
+                    Debug.Log("Scene 'Panik' will be loaded");
+                    SceneManager.LoadSceneAsync("panikuebung", LoadSceneMode.Single);
+                }
+                break;
+        }
     }
 
     public void vorschlagprototyp()
@@ -40,8 +53,9 @@ public class ExerciseManager : MonoBehaviour {
 
     public void aufgabe()
     {
+        keywordManager.StopKeywordRecognizer();
         beginn.Play();
-        Debug.Log("Scene 'Panik' will be loaded");
-        SceneManager.LoadScene("panikuebung", LoadSceneMode.Single);
+        stage++;
     }
+
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Academy.HoloToolkit.Unity;
+using UnityEngine.SceneManagement;
 
 public class MenueController : MonoBehaviour
 {
@@ -93,6 +94,18 @@ public class MenueController : MonoBehaviour
         Graph.SetActive(true);
 		Pyramide.SetActive(true);	
 	}
+
+    public void restart()
+    {
+        Debug.Log("Scene 'Initialisierung' will be loaded");
+        SceneManager.LoadScene("02_initialisierung", LoadSceneMode.Single);
+    }
+
+    public void loadMain()
+    {
+        Debug.Log("Scene 'Main' will be loaded");
+        SceneManager.LoadScene("01_main", LoadSceneMode.Single);
+    }
 }
 
 

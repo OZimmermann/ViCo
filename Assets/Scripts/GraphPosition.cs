@@ -14,7 +14,7 @@ public class GraphPosition : MonoBehaviour {
         CountAirTapGraph++;
         AirTapEvenOdd = CountAirTapGraph / 3;
         //Debug.Log("CountAirTapGraph: " + CountAirTapGraph);
-        Debug.Log("AirTapEvenOdd: " + AirTapEvenOdd);
+        Debug.Log("AirTapEvenOdd: " + AirTapEvenOdd); 
 
         // If the user is in placing mode, display the spatial mapping mesh.
         //if(AirTapEvenOdd % 2 == 0 || CountAirTapPyramide == 2)

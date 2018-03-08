@@ -35,7 +35,7 @@ public class InitializationManager : MonoBehaviour {
         EulenAuswahl.SetActive(false);
 
         start.Play();
-        Debug.Log("Sag: yes, okay (,ja)");
+        Debug.Log("Sag: yes, okay");
     }
 
     void Update () {
@@ -43,7 +43,7 @@ public class InitializationManager : MonoBehaviour {
 		case 1:
 			if (!start.isPlaying) {
 				keywordManager.StartKeywordRecognizer ();
-				Debug.Log ("KeywordManager started");
+				//Debug.Log ("KeywordManager started");
 			}
 			break;
 		case 2: 
@@ -96,8 +96,7 @@ public class InitializationManager : MonoBehaviour {
 		stage++;
 		keywordManager.StopKeywordRecognizer ();
 		gender.Play ();
-		Debug.Log ("Sag: man");
-		Debug.Log ("Saveword: two");
+		Debug.Log ("Sag: man, male");
 	}
 
 	public void ChooseOwl () {
@@ -106,8 +105,7 @@ public class InitializationManager : MonoBehaviour {
         stage++;
 		keywordManager.StopKeywordRecognizer ();
 		owl.Play ();
-		Debug.Log ("Sag: Sag Waldkauz/Uhu/Schneeeule");
-		Debug.Log ("Saveword: four");
+		Debug.Log ("Sag: snowy owl, second, middle one");
 	}
 
 	public void EndIntroduction () {
