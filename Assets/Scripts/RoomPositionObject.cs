@@ -10,13 +10,12 @@ public class RoomPositionObject : MonoBehaviour
 	{
 		// On each Select gesture, count up
         CountAirTapPyramide++;
-        AirTapEvenOdd = CountAirTapPyramide / 8;
-        Debug.Log("CountAirTapPyramide: " + CountAirTapPyramide);
+        AirTapEvenOdd = CountAirTapPyramide / 8; // OnSelect triggers too often
+        //Debug.Log("CountAirTapPyramide: " + CountAirTapPyramide);
         //Debug.Log("AirTapEvenOdd: " + AirTapEvenOdd);
 
         // If the user is in placing mode, display the spatial mapping mesh.
-        //if(AirTapEvenOdd % 2 == 0 || CountAirTapPyramide == 2)
-        if (AirTapEvenOdd % 2 == 0) // even number
+        if (AirTapEvenOdd % 2 != 0) // even number
         {
 			SpatialMapping.Instance.DrawVisualMeshes = true;
 		}
@@ -39,10 +38,8 @@ public class RoomPositionObject : MonoBehaviour
             {
                 //Do nothing
             }
-        /*if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
-            30.0f, SpatialMapping.PhysicsRaycastMask) && (AirTapEvenOdd % 2 == 0 || CountAirTapPyramide == 2))*/
-        else if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
-                30.0f, SpatialMapping.PhysicsRaycastMask) && AirTapEvenOdd % 2 == 0)
+            else if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
+                30.0f, SpatialMapping.PhysicsRaycastMask) && AirTapEvenOdd % 2 != 0)
             {
 				// Move this object to where the raycast hit the Spatial Mapping mesh.
 				this.transform.position = hitInfo.point;
@@ -52,6 +49,6 @@ public class RoomPositionObject : MonoBehaviour
                 toQuat.x = 0;
 				toQuat.z = 0;
 				this.transform.rotation = toQuat;
-        }        
+            }        
 	}
 }

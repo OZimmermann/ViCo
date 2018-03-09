@@ -19,12 +19,11 @@ public class SteinePosition : MonoBehaviour
     {
         // On each Select gesture, count up
         CountAirTapSteine++;
-        AirTapEvenOdd = CountAirTapSteine / 8;
+        AirTapEvenOdd = CountAirTapSteine / 8; // OnSelect triggers too often
         //Debug.Log("CountAirTapSteine: " + CountAirTapSteine);
 
         // If the user is in placing mode, display the spatial mapping mesh.
-        //if(AirTapEvenOdd % 2 == 0 || CountAirTapSteine == 2)
-        if (AirTapEvenOdd % 2 == 0) // even number
+        if (AirTapEvenOdd % 2 != 0) // even number
         {
             SpatialMapping.Instance.DrawVisualMeshes = true;
         }
@@ -49,7 +48,7 @@ public class SteinePosition : MonoBehaviour
             //Do nothing
         }
         else if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
-        30.0f, pyramideClass.pyramideLayerMask) && AirTapEvenOdd % 2 == 0)
+        30.0f, pyramideClass.pyramideLayerMask) && AirTapEvenOdd % 2 != 0)
         {
             // Move this object to where the raycast hit the Spatial Mapping mesh.
             this.transform.position = hitInfo.point;

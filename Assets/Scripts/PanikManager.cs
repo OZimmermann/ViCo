@@ -104,7 +104,7 @@ public class PanikManager : MonoBehaviour {
         stage++; // 2
         keywordManager.StopKeywordRecognizer();
         panik.Play();
-        Debug.Log("Sag: help me / no");
+        Debug.Log("Sag: help me");
     }
 
     public void panikaufgabe()
