@@ -10,6 +10,7 @@ public class InitializationManager : MonoBehaviour {
 	public AudioSource gender;
 	public AudioSource owl;
 	public AudioSource end;
+
 	public KeywordManager keywordManager;
 
     public GameObject Eule;

@@ -14,7 +14,9 @@ public class TherapyTaskManager : MonoBehaviour {
 
     public KeywordManager keywordManager;
 
-    private int stage;
+    private int counter; // for keyboard input
+
+    public int stage;
     /* 
      * stage = 1 // Angst Intro
      * stage = 2 // Ängste sortieren
@@ -58,7 +60,23 @@ public class TherapyTaskManager : MonoBehaviour {
             default:
                 break;
         }
-	}
+
+        // Keyboard input instead of speach input
+        if (Input.GetKeyDown("space"))
+        {
+            counter++;
+
+            if (counter == 1)
+            {
+                angstSortieren();
+            }
+            else if (counter == 2)
+            {
+                pyramideFertig();
+            }
+        }
+
+    }
 
     public void angstSortieren()
     {
