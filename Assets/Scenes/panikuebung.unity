@@ -1958,7 +1958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RecognizerStart: 1
   KeywordsAndResponses:
-  - Keyword: blackout
+  - Keyword: black out
     Response:
       m_PersistentCalls:
         m_Calls:

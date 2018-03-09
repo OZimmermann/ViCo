@@ -7,18 +7,22 @@ public class GraphPosition : MonoBehaviour {
     private int CountAirTapGraph = 0;
     private int AirTapEvenOdd;
 
+    void Start()
+    {
+        SpatialMapping.Instance.DrawVisualMeshes = false;
+    }
+
     // Called by GazeGestureManager when the user performs a Select gesture
     void OnSelect()
     {
         // On each Select gesture, count up
         CountAirTapGraph++;
-        AirTapEvenOdd = CountAirTapGraph / 3;
+        AirTapEvenOdd = CountAirTapGraph / 3; // OnSelect triggers too often
         //Debug.Log("CountAirTapGraph: " + CountAirTapGraph);
-        Debug.Log("AirTapEvenOdd: " + AirTapEvenOdd); 
+        //Debug.Log("AirTapEvenOdd: " + AirTapEvenOdd); 
 
         // If the user is in placing mode, display the spatial mapping mesh.
-        //if(AirTapEvenOdd % 2 == 0 || CountAirTapPyramide == 2)
-        if (AirTapEvenOdd % 2 == 0) // even number
+        if (AirTapEvenOdd % 2 != 0) // even number
         {
             SpatialMapping.Instance.DrawVisualMeshes = true;
         }
@@ -41,10 +45,8 @@ public class GraphPosition : MonoBehaviour {
         {
             //Do nothing
         }
-        /*if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
-            30.0f, SpatialMapping.PhysicsRaycastMask) && (AirTapEvenOdd % 2 == 0 || CountAirTapPyramide == 2))*/
         else if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
-                30.0f, SpatialMapping.PhysicsRaycastMask) && AirTapEvenOdd % 2 == 0)
+                30.0f, SpatialMapping.PhysicsRaycastMask) && AirTapEvenOdd % 2 != 0)
         {
             // Move this object to where the raycast hit the Spatial Mapping mesh.
             this.transform.position = hitInfo.point;
